@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7hNuH_3VWm5Lb9m_CSPnURwi7Uc9eX3yBqZ1buyb1RrDpLEtIECh33FhG-6oIFLPCqdY&usqp=CAU" alt = "kevin Logo"  class="logo">
+            <h1> kevin Solutions </h1>
+        </header>
+        
+        <!-- Login Page -->
+        <section id="login-page" class="page">
+            <div class="card">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <p id="login-error" class="error-message"></p>
+            </div>
+        </section>
+
+        <!-- Admin Dashboard -->
+        <section id="admin-dashboard" class="page">
+            <div class="dashboard-header">
+                <h2>Admin Dashboard</h2>
+                <button class="logout-btn" onclick="logout()">Logout</button>
+            </div>
+            <div class="task-section">
+                <h3>Assign Task</h3>
+                <form id="task-form">
+                    <input type="text" id="task-title" placeholder="Task Title" required>
+                    <select id="employee-select">
+                        <!-- Employees will be populated here -->
+                    </select>
+                    <button type="submit">Assign Task</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Employee Dashboard -->
+        <section id="employee-dashboard" class="page">
+            <div class="dashboard-header">
+                <h2>Employee Dashboard</h2>
+                <button class="logout-btn" onclick="logout()">Logout</button>
+            </div>
+            <div class="task-section">
+                <h3>My Tasks</h3>
+                <ul id="task-list"></ul>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

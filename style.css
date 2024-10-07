@@ -1,0 +1,110 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: rgba(53, 104, 213, 0.318); /* Bright red-orange background */
+    color:black;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:black; /* Dark charcoal for header */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+    vertical-align: middle;
+    margin-right: 1rem;
+    
+    
+}
+
+h1 {
+    display: inline;
+    font-size: 1.5rem;
+}
+
+#app {
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+.page {
+    display: none;
+}
+
+.card {
+    background-color: whitesmoke; /* Light grey card background */
+    padding: 2rem;
+    box-shadow: 0 0 10px black(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select, button {
+    margin: 1rem 0;
+    padding: 0.75rem;
+    border: 1px solid whitesmoke; /* Light grey border for inputs */
+    border-radius: 4px;
+}
+
+button {
+    background-color: rgb(6, 6, 6); /* Dark button background */
+    color: whitesmoke;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555555; /* Slightly lighter hover color */
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logout-btn {
+    background-color: whitesmoke; /* Coral red logout button */
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+.error-message {
+    color: red;
+    margin-top: 1rem;
+}
+
+.task-section {
+    margin-top: 2rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 0.5rem;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
